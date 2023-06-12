@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 /*---------------------------------HOMEPAGE.PHP-------------------------*/
 body{
@@ -64,5 +66,127 @@ body{
 @media only screen and (min-width: 1000px) {
     .oversched{
         width: 70%;
+    }
+}
+
+
+
+
+/*---------------------------------ACCOUNT.PHP-------------------------*/
+.abody{
+    background-color: coral;
+    flex: 11;
+    display: flex;
+    flex-direction: column;
+}
+.abody1{
+    background-color: gray;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.acc-pic{
+    background-color: lightgoldenrodyellow;
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.afaculty{
+    background-color: pink;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abody2{
+    background-color: green;
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+.aemail{
+    background-color: magenta;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.aemail1{
+    background-color: red;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.aemail1 h3, .aphone1 h3, .aemail2 p, .aphone2 p{
+    margin-left: 20px;
+}
+.aemail2 p, .aphone2 p{
+    font-size: 20px;
+}
+.aemail2{
+    background-color: greenyellow;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.aphone{
+    background-color: yellow;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.aphone1{
+    background-color: red;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.aphone2{
+    background-color: green;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.aempty{
+    background-color: black;
+    flex: 3;
+}
+.back-btn{
+    width: 25px;
+    height: 25px;
+}
+.back-btn:hover{
+    filter: invert(99%) sepia(1%) saturate(953%) hue-rotate(155deg) brightness(115%) contrast(100%);
+}
+.instruc-pic{
+    height: 120px;
+    width: 120px;
+    border-radius: 60px; 
+}
+
+@media only screen and (min-width: 768px) {
+    .instruc-pic{
+        height: 200px;
+        width: 200px;
+        border-radius: 100px; 
+    }
+    .afaculty h2{
+        font-size: 30px;
+    }
+    .aemail2 p, .aphone2 p{
+        font-size: 25px;
+    }
+    .aemail1 h3, .aphone1 h3{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .abody1{
+        flex: 3;
     }
 }
