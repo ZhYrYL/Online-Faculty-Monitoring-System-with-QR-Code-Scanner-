@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*---------------------------------HOMEPAGE.PHP-------------------------*/
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.hhead{
+    background-color: lightgreen;
+    flex: 1;
+    display: flex;
+}
+.profile{
+    background-color: magenta;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    background-color: lightblue;
+    flex: 5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header h2{
+    margin-left: 20px;
+}
+.hbody{
+    background-color: coral;
+    flex: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.oversched{
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    .header h2{
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    .header{
+        flex: 7;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .oversched{
+        width: 70%;
+    }
+}
