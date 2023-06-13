@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="adinput3">
-                    <input type="submit" name="adminlogin"  value="Login" class="admlogin">
+                        <a href="adminhomepage.php" class="admlogin">Login</a>
                 </div>
             </div>
         </div>

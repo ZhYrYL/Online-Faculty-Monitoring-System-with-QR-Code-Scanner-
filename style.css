@@ -227,6 +227,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .username-icon, .password-icon{
     background-color: lightsalmon;
     width: 80%;
@@ -275,6 +276,10 @@ body{
     background-color: #269934;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .admlogin:hover{
     transition: 0.3s;
@@ -289,10 +294,6 @@ body{
     /* background-color: red; */
     display: flex;
 }
-/* .adlogo{
-    background-color: orange;
-    flex: 1;
-} */
 .adbanner{
     /* background-color: yellow; */
     flex: 1;
@@ -312,7 +313,8 @@ body{
         font-size: 40px;
     }
     .psu-banner{
-        width: 70%;
+        width: 400px;
+
     }
     .user-input input, .pass-input input{
         font-size: 25px;
@@ -338,12 +340,173 @@ body{
         font-size: 20px;
         text-indent: 15px;
     }
-   .psu-banner{
-        width: 40%;
+    .psu-banner{
+        width: 30%;
     }
     .adlogheader h2{
         font-size: 30px;
     }
 }
+
+
+
+/*---------------------------------ADMINHOMEPAGE.PHP-------------------------*/
+
+.adhomeheader{
+    /* background-color: coral; */
+    flex: 1;
+    display: flex;
+}
+.adlogo{
+    background-color: red;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adlogo img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.adlogo img:hover{
+    transition: 0.3s;
+    filter: brightness(90%);
+}
+.adtab{
+    background-color: blue;
+    flex: 4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.adtab h2{
+    margin-left: 10px;
+}
+.adhomebody{
+    background-color: lightgreen;
+    flex: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adsched{
+    width: 90%;
+    height: 80%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+.adinshead{
+    background-color: gray;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.adinshead h3{
+    margin-left: 10px;
+}
+.adinstructor{
+    background-color: pink;
+    flex: 9;
+}
+.adhomefooter{
+    background-color: lightblue;
+    flex: 1;
+}
+.adlogo .links{
+    display: flex;
+    gap: 20px;
+    display: none;
+}
+.adlogo .links li{
+    list-style: none;
+}
+
+.adlogo .links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+/* .adlogo .links li a:hover{
+    color: blue;
+} */
+
+.dropdown-menu{
+    background-color: #00000099;
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+
+}
+.open{
+    display: block;
+    transition: 1s;
+}
+.dropdown-menu .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dropdown-menu .links li{
+    padding: 0.5rem;
+}
+.dropdown-menu .links li:hover{
+    color: white;
+    background-color: #00000099;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .adlogo img{
+        width: 60px;
+        height: 60px;
+    }
+    .adtab h2{
+        font-size: 25px;
+    }
+    .adinshead h3{
+        font-size: 20px;
+    }
+    .dropdown-menu{
+        top: 85px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .adlogo img{
+        display: none;
+    }
+    .adlogo{
+        flex: 4;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .adtab{
+        flex: 1;
+    }
+    .adlogo .links{
+        margin-left: 50px;
+        display: block;
+        display: flex;
+    }
+    .dropdown-menu{
+        display: none;
+    }
+}
+
+
+
+
 
 
