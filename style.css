@@ -374,7 +374,7 @@ body{
     filter: brightness(90%);
 }
 .adtab{
-    background-color: blue;
+    background-color: yellow;
     flex: 4;
     display: flex;
     justify-content: flex-start;
@@ -410,6 +410,15 @@ body{
 .adinstructor{
     background-color: pink;
     flex: 9;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 4px;
+}
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 10px;
 }
 .adhomefooter{
     background-color: lightblue;
@@ -429,9 +438,9 @@ body{
     color: white;
     font-size: 1rem;
 }
-/* .adlogo .links li a:hover{
-    color: blue;
-} */
+.adlogo .links li a:hover{
+    color: gold;
+}
 
 .dropdown-menu{
     background-color: #00000099;
@@ -487,13 +496,16 @@ body{
         display: none;
     }
     .adlogo{
-        flex: 4;
+        flex: 50;
         display: flex;
-        justify-content: flex-start;
+        justify-content: flex-end;
         align-items: center;
     }
     .adtab{
         flex: 1;
+    }
+    .adtab h2{
+        display: none;
     }
     .adlogo .links{
         margin-left: 50px;
@@ -505,6 +517,76 @@ body{
     }
 }
 
+
+
+/*---------------------------------ADMINANALYTICS.PHP-------------------------*/
+.adbodyanalytics{
+    background-color: lightgreen;
+    flex: 10;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.analytics{
+    width: 335px;
+    height: 445px;
+    background-color: yellow;
+    margin: 60px 0 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.analytics-empty{
+    height: 900px;
+    background-color: red;
+}
+
+.analytics-header{
+   flex: 1;
+   background-color: coral;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.analytics-header h3{
+    margin-left: 10px;
+ }
+.analytics-footer{
+    flex: 9;
+    background-color: cyan;
+ }
+
+ @media only screen and (min-width: 768px) {
+    .analytics-empty{
+        height: 600px;
+    }
+    .analytics{
+        width: 450px;
+        height: 445px;
+    }
+ }
+
+ @media only screen and (min-width: 1000px) {
+    .analytics-container{
+        display: flex;
+        /* background-color: red; */
+        width: 99%;
+        justify-content: space-evenly;
+    }
+    
+    .analytics{
+    width: 400px;
+    /* height: 445px; */
+    background-color: yellow;
+    margin: 60px 0 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+    
+ }
+ 
 
 
 
