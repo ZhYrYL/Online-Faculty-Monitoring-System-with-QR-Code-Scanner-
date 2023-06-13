@@ -12,14 +12,14 @@
         <div class="adlogo">
             <img src="img/psu-logo.png" class="psu-logo" onclick="psulogo()">
             <ul class="links">
-                <li><a href="adminhomepage.php">Attendance</a></li>
-                <li><a href="adminanalytics.php">Analytics</a></li>
+                <li><a href="adminhomepage.php" style="color: gold">Attendance</a></li>
+                <li><a href="adminanalytics.php" >Analytics</a></li>
                 <li><a href="adminschedule.php">Schedule</a></li>
                 <li><a href="adminaddpersonal.php">Add Instructor</a></li>
             </ul>
             <div class="dropdown-menu">
                 <ul class="links">
-                    <li><a href="adminhomepage.php">Attendance</a></li>
+                    <li><a href="adminhomepage.php" style="color: gold">Attendance</a></li>
                     <li><a href="adminanalytics.php">Analytics</a></li>
                     <li><a href="adminschedule.php">Schedule</a></li>
                     <li><a href="adminaddpersonal.php">Add Instructor</a></li>
