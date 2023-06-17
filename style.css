@@ -793,7 +793,7 @@ body{
     align-items: center;
     padding-right: 25px;
 }
-.add-instruc-footer input{
+.add-instruc-footer a{
     height: 80%;
     width: 20%;
     border-radius: 3px;
@@ -801,8 +801,14 @@ body{
     background-color: #269934;
     color: white;
     font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
 }
-.add-instruc-footer input:hover{
+.add-instruc-footer a:hover{
     transition: 0.3s;
     background-color: #38E54D;
 }
@@ -848,4 +854,164 @@ body{
 }
 
 
+
+/*---------------------------------ADMINADDSCHED.PHP-------------------------*/
+
+.add-schedule{
+    width: 90%;
+    height: 80%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+.add-sched-header{
+    background-color: gray;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.add-sched-header h3{
+    margin-left: 10px;
+}
+.add-sched-body{
+    flex: 7;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.add-sched{
+    height: 45px;
+    background-color: lightcoral;
+    border-bottom: 1px solid;
+    display: flex;
+}
+.sched-label{
+    flex: 1.5;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sched-input{
+    flex: 2;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sched-input select{
+    width: 80%;
+    height: 80%;
+}
+.add-sched1 .sched-input select{
+    width: 88%;
+}
+.add-sched1{
+    height: 76px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+.add-sched-footer{
+    flex: 1;
+    background-color: lightblue;
+    display: flex;
+    padding-right: 20px;
+}
+.add-subject{
+    flex: 3;
+    background-color: orange;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.add-next{
+    flex: 1;
+    /* background-color: green; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.add-next a{
+    height: 60%;
+    width: 80%;
+    border-radius: 3px;
+    border: none;
+    background-color: #269934;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+.add-subject button{
+    height: 60%;
+    width: 70%;
+    border-radius: 3px;
+    border: none;
+    background-color: #269934;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.add-next a:hover{
+    transition: 0.3s;
+    background-color: #38E54D;
+}
+
+.add-subject button:hover{
+    transition: 0.3s;
+    background-color: #38E54D;
+}
+
+@media only screen and (min-width: 768px) {
+    .add-schedule{
+        width: 70%;
+        height: 60%;
+    }
+    .add-sched{
+        height: 57px;
+    }
+    .add-sched1{
+        height: 56px;
+        flex-direction: row;
+    }
+    .add-sched1 .sched-input select{
+        width: 80%;
+    }
+    .add-sched-header h3{
+        font-size: 20px;
+    }
+    .add-sched-footer{
+        flex: 1;
+        background-color: lightblue;
+        display: flex;
+        padding-right: 32px;
+    }
+    .add-subject button{
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .add-schedule{
+        width: 40%;
+        height: 80%;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+    }
+}
 
