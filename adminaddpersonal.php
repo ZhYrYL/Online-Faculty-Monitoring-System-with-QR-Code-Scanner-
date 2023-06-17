@@ -33,7 +33,7 @@
     <div class="adhomebody">
         <div class="admin-add-personal">
             <div class="add-instruc-head">
-                <h3>Instructor Schedule</h3>
+                <h3>Personal Information</h3>
             </div>
             <div class="add-instruc-body">
                 <div class="addpersonal">
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="add-instruc-footer">
-                <input type="submit" name="next-btn" value="Next">
+                <a href="adminaddsched.php">Next</a>
             </div>
         </div>
     </div>
