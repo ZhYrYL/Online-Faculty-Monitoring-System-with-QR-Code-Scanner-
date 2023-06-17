@@ -729,3 +729,123 @@ body{
 }
 
 
+/*---------------------------------ADMINADDPERSONAL.PHP-------------------------*/
+
+.admin-add-personal{
+    width: 90%;
+    height: 80%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+.add-instruc-head{
+    background-color: gray;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.add-instruc-head h3{
+    margin-left: 10px;
+}
+.add-instruc-body{
+    flex: 8;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+}
+.addpersonal{
+    display: flex;
+    flex-direction: column;
+    background-color: coral;
+    border-bottom: 1px solid;
+    flex: 1;
+}
+.addlabel{
+    flex: 2;
+    background-color: aqua;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.addlabel label{
+    margin-left: 30px;
+}
+.addinfo{
+    flex: 3;
+    background-color: magenta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addinfo input{
+    height: 80%;
+    width: 85%;
+    border-radius: 3px;
+    border: 1px solid gray;
+    text-indent: 5px;
+}
+.add-instruc-footer{
+    flex: 1;
+    background-color: lightblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 25px;
+}
+.add-instruc-footer input{
+    height: 80%;
+    width: 20%;
+    border-radius: 3px;
+    border: none;
+    background-color: #269934;
+    color: white;
+    font-weight: bold;
+}
+.add-instruc-footer input:hover{
+    transition: 0.3s;
+    background-color: #38E54D;
+}
+
+@media only screen and (min-width: 768px) {
+    .add-instruc-head h3{
+        font-size: 20px;
+    }
+    .admin-add-personal{
+        width: 70%;
+        height: 70%;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+    }
+    .addinfo input{
+        height: 60%;
+    }
+    .addlabel label{
+        margin-left: 45px;
+        font-size: 20px;
+    }
+    .add-instruc-footer{
+        padding-right: 40px;
+    }
+    .add-instruc-footer input{
+        height: 70%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .admin-add-personal{
+        width: 30%;
+        height: 60%;
+    }
+    .addlabel label{
+        margin-left: 30px;
+    }
+    .add-instruc-footer{
+        padding-right: 35px;
+    }
+    
+}
+
+
+
