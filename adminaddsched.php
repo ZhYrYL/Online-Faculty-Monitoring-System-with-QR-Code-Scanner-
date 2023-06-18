@@ -145,7 +145,7 @@
                     <button>Add more Subject</button>
                 </div>
                 <div class="add-next">
-                    <a href="admingencode.php">Next</a>
+                    <a href="admingencode.php">Generate QR Code</a>
                 </div>
             </div>
         </div>
