@@ -922,8 +922,8 @@ body{
     padding-right: 20px;
 }
 .add-subject{
-    flex: 3;
-    background-color: orange;
+    flex: 1;
+    background-color: red;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -949,6 +949,7 @@ body{
     align-items: center;
     padding-bottom: 3px;
     cursor: pointer;
+    font-size: 13px;
 }
 .add-subject button{
     height: 60%;
@@ -1003,6 +1004,9 @@ body{
     .add-subject button{
         width: 45%;
     }
+    .add-subject{
+        flex: 2;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -1013,5 +1017,90 @@ body{
         display: flex;
         flex-direction: column;
     }
+    .add-sched-footer{
+        padding-right: 50px;
+    }
 }
 
+
+
+
+/*---------------------------------ADMINGENCODE.PHP-------------------------*/
+
+.generate-code{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 65%;
+    background-color: pink;
+}
+.qr-code{
+    flex: 5;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download-qr{
+    flex: 1;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.download-qr a{
+    height: 60%;
+    width: 20%;
+    border-radius: 3px;
+    border: none;
+    background-color: #269934;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.download-qr a:hover{
+    transition: 0.3s;
+    background-color: #38E54D;
+}
+
+.download-qr button{
+    height: 60%;
+    width: 50%;
+    border-radius: 3px;
+    border: none;
+    background-color: #269934;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.download-qr button:hover{
+    transition: 0.3s;
+    background-color: #38E54D;
+}
+
+@media only screen and (min-width: 768px) {
+    .generate-code{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .generate-code{
+        width: 30%;
+        height: 60%;
+    }
+}
