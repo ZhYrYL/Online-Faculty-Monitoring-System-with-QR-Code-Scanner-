@@ -576,19 +576,22 @@ body{
 
 /*---------------------------------ADMINANALYTICS.PHP-------------------------*/
 .adbodyanalytics{
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     flex: 10;
     overflow: hidden;
     overflow-y: scroll;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('https://the-post-assets.sgp1.digitaloceanspaces.com/2022/06/CAMPUS-2-JUNE-24.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .analytics{
     width: 335px;
     height: 445px;
-    background-color: yellow;
+    /* background-color: yellow; */
     margin: 60px 0 10px 0px;
     display: flex;
     flex-direction: column;
@@ -600,9 +603,9 @@ body{
 
 .analytics-header{
    flex: 1;
-   background-color: coral;
+   background-color: #80808099;
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
 }
 .analytics-header h3{
@@ -610,7 +613,7 @@ body{
  }
 .analytics-footer{
     flex: 9;
-    background-color: cyan;
+    background-color: #ffffff99;
  }
 
  @media only screen and (min-width: 768px) {
@@ -632,13 +635,20 @@ body{
     }
     
     .analytics{
-    width: 400px;
-    /* height: 445px; */
-    background-color: yellow;
-    margin: 60px 0 10px 0px;
-    display: flex;
-    flex-direction: column;
-}
+        width: 400px;
+        /* height: 445px; */
+        /* background-color: yellow; */
+        margin: 60px 0 10px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .analytics-header{
+        flex: 1;
+        background-color: #80808099;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
     
  }
  
