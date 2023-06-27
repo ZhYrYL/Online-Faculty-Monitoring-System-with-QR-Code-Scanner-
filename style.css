@@ -658,7 +658,10 @@ body{
 /*---------------------------------ADMINSCHEDULE.PHP-------------------------*/
 
 .adbodysched{
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
+    background: url('https://the-post-assets.sgp1.digitaloceanspaces.com/2022/06/CAMPUS-2-JUNE-24.png');
+    background-size: cover;
+    background-position: center;
     flex: 10;
     display: flex;
     flex-direction: column;
@@ -668,12 +671,12 @@ body{
 
 .adschedhead{
     flex: 1;
-    background-color: cyan;
+    /* background-color: cyan; */
     display: flex;
 }
 .adschedcontent{
     flex: 11;
-    background-color: coral;
+    /* background-color: coral; */
     overflow: hidden;
     overflow-y: scroll;
     display: flex;
@@ -684,8 +687,8 @@ body{
 
 .adschedtitle, .adschedsearch{
     flex: 1;
-    background-color: pink;
-    border-left: 1px solid;
+    /* background-color: pink;
+    border-left: 1px solid; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -718,7 +721,7 @@ body{
     background-color: #38E54D;
 }
 .instruc-sched{
-    background-color: green;
+    /* background-color: green; */
     width: 350px;
     height: 450px;
     display: flex;
@@ -728,14 +731,14 @@ body{
 }
 .instrucheader{
     flex: 1;
-    background-color: #ffffff;
+    background-color: #80808099;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 .instrucbody{
     flex: 9;
-    background-color: red;
+    background-color: #ffffff99;
     overflow: hidden;
     overflow-x: scroll;
     display: flex;
@@ -776,6 +779,15 @@ body{
         height: 30px;
         text-indent: 10px;
     }
+    .adschedhead{
+        padding: 0 110px 0;
+    }
+    .adschedtitle{
+        justify-content: flex-start;
+    }
+    .adschedsearch{
+        justify-content: flex-end;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -789,6 +801,15 @@ body{
     .adschedsearch .search-name{
         width: 40%;
         text-indent: 5px;
+    }
+    .adschedhead{
+        padding: 0 350px 0;
+    }
+    .adschedtitle{
+        flex: 1;
+    }
+    .adschedsearch{
+        flex: 3;
     }
     
 }
