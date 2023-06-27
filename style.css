@@ -820,12 +820,12 @@ body{
 .admin-add-personal{
     width: 90%;
     height: 80%;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
 }
 .add-instruc-head{
-    background-color: gray;
+    background-color: #80808099;
     flex: 1;
     display: flex;
     justify-content: flex-start;
@@ -836,20 +836,20 @@ body{
 }
 .add-instruc-body{
     flex: 8;
-    background-color: pink;
+    background-color: #ffffff99;
     display: flex;
     flex-direction: column;
 }
 .addpersonal{
     display: flex;
     flex-direction: column;
-    background-color: coral;
-    border-bottom: 1px solid;
+    /* background-color: coral; */
+    /* border-bottom: 1px solid; */
     flex: 1;
 }
 .addlabel{
     flex: 2;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -859,7 +859,7 @@ body{
 }
 .addinfo{
     flex: 3;
-    background-color: magenta;
+    /* background-color: magenta; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -873,7 +873,7 @@ body{
 }
 .add-instruc-footer{
     flex: 1;
-    background-color: lightblue;
+    background-color: #ffffff99;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -906,7 +906,7 @@ body{
     .admin-add-personal{
         width: 70%;
         height: 70%;
-        background-color: aqua;
+        /* background-color: aqua; */
         display: flex;
         flex-direction: column;
     }
@@ -928,13 +928,16 @@ body{
 @media only screen and (min-width: 1000px) {
     .admin-add-personal{
         width: 30%;
-        height: 60%;
+        height: 65%;
     }
     .addlabel label{
         margin-left: 30px;
     }
     .add-instruc-footer{
         padding-right: 35px;
+    }
+    .addinfo input{
+        height: 85%;
     }
     
 }
