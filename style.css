@@ -1121,18 +1121,18 @@ body{
     flex-direction: column;
     width: 80%;
     height: 65%;
-    background-color: pink;
+    background-color: #ffffff99;
 }
 .qr-code{
     flex: 5;
-    background-color: coral;
+    /* background-color: coral; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .download-qr{
     flex: 1;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     justify-content: space-around;
     align-items: center;
