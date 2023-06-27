@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -354,15 +355,20 @@ body{
 
 .adhomeheader{
     /* background-color: coral; */
+    /* background: linear-gradient(45deg, #feb101, #feb707, #feb707, #fed722, #ffdc2a, #fee837, #feef40 ); */
+    background: url(img/psu-header.png);
+    background-position: center;
+    background-size: cover;
     flex: 1;
     display: flex;
 }
 .adlogo{
-    background-color: red;
+    /* background-color: red; */
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border-right: 1px solid; */
 }
 .adlogo img{
     width: 50px;
@@ -374,31 +380,35 @@ body{
     filter: brightness(90%);
 }
 .adtab{
-    background-color: yellow;
+    /* background-color: #5361a4; */
     flex: 4;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    color: #ffffff;
 }
 .adtab h2{
     margin-left: 10px;
 }
 .adhomebody{
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     flex: 10;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('https://the-post-assets.sgp1.digitaloceanspaces.com/2022/06/CAMPUS-2-JUNE-24.png');
+    background-size: cover;
+    background-position: center;
 }
 .adsched{
     width: 90%;
     height: 80%;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
 }
 .adinshead{
-    background-color: gray;
+    background-color: #80808099;
     flex: 1;
     display: flex;
     justify-content: flex-start;
@@ -408,7 +418,7 @@ body{
     margin-left: 10px;
 }
 .adinstructor{
-    background-color: pink;
+    background-color: #ffffff99;
     flex: 9;
     overflow: hidden;
     overflow-y: scroll;
@@ -421,8 +431,47 @@ body{
     border-radius: 10px;
 } */
 .adhomefooter{
-    background-color: lightblue;
+    background-color: #4e588c;
+    /* background: url(img/psu-footer.png);
+    background-size: 350px 60px; */
+    background-position: center;
     flex: 1;
+    display: flex;
+}
+.footer-1{
+    /* background-color: gray; */
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+}
+.footer-1 p{
+    font-family: 'Playball', cursive;
+    margin-left: 20px;
+    color: white;
+}
+.footer-2{
+    /* background-color: coral; */
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 13px;
+}
+.footer-2 a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+.footer-2 a:hover{
+    transition: 0.5s;
+    color: #808080;
+}
+.footer-2 img{
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
 }
 .adlogo .links{
     display: flex;
@@ -515,6 +564,12 @@ body{
     .dropdown-menu{
         display: none;
     }
+    .adhomeheader{
+        background: url(img/psu-header-2.png);
+    }
+    /* .adhomebody{
+     background: url('img/psu-bg.png');
+    } */
 }
 
 

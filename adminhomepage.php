@@ -40,7 +40,15 @@
             </div>
         </div>
     </div>
-    <div class="adhomefooter"></div>
+    <div class="adhomefooter">
+        <div class="footer-1">
+            <p>Pangasinan State University</p>
+        </div>
+        <div class="footer-2">
+            <img src="img/internet.png">
+            <a href="https://main.psu.edu.ph/" target="_blank">www.psu.edu.ph</a>
+        </div>
+    </div>
 
     <script>
         const toggleBtn = document.querySelector('.psu-logo')
