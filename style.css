@@ -14,41 +14,74 @@ body{
     flex-direction: column;
 }
 .hhead{
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
+    background: url(img/psu-header.png);
+    background-position: center;
+    background-size: cover;
     flex: 1;
     display: flex;
 }
 .profile{
-    background-color: magenta;
+    /* background-color: magenta; */
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.profile img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 15px;
+}
 .header{
-    background-color: lightblue;
-    flex: 5;
+    /* background-color: lightblue; */
+    flex: 4;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    color: white;
 }
 .header h2{
     margin-left: 20px;
 }
 .hbody{
-    background-color: coral;
-    flex: 11;
+    /* background-color: coral; */
+    flex: 10;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('https://the-post-assets.sgp1.digitaloceanspaces.com/2022/06/CAMPUS-2-JUNE-24.png');
+    background-size: cover;
+    background-position: center;
+}
+.hfooter{
+    flex: 1;
+    display: flex;
+    background-color: #4e588c;
+    /* background-color: coral; */
+    flex-direction: row;
 }
 .oversched{
-    background-color: pink;
+    /* background-color: pink; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     width: 90%;
     height: 80%;
+}
+.oversched-head{
+    background-color: #80808099;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.oversched-head h3{
+    margin-left: 10px;
+}
+.oversched-body{
+    background-color: #ffffff99;
+    flex: 9;
 }
 .logo{
     height: 50px;
@@ -68,7 +101,16 @@ body{
 }
 @media only screen and (min-width: 1000px) {
     .oversched{
-        width: 70%;
+        width: 50%;
+    }
+    .header{
+        flex: 1;
+    }
+    .header h2{
+        display: none;
+    }
+    .hhead{
+        background: url(img/psu-header-2.png);
     }
 }
 
@@ -431,6 +473,7 @@ body{
 .adlogo img{
     width: 50px;
     height: 50px;
+    border-radius: 25px;
     cursor: pointer;
 }
 .adlogo img:hover{
@@ -625,9 +668,9 @@ body{
     .adhomeheader{
         background: url(img/psu-header-2.png);
     }
-    /* .adhomebody{
-     background: url('img/psu-bg.png');
-    } */
+    .adsched{
+        width: 50%;
+    }
 }
 
 
