@@ -22,7 +22,7 @@ body{
     display: flex;
 }
 .profile{
-    /* background-color: magenta; */
+    background-color: magenta;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@ body{
     color: white;
 }
 .header h2{
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 .hbody{
     /* background-color: coral; */
@@ -119,45 +119,60 @@ body{
 
 /*---------------------------------ACCOUNT.PHP-------------------------*/
 .abody{
-    background-color: coral;
+    /* background-color: coral; */
     flex: 11;
     display: flex;
     flex-direction: column;
+     background: url('https://the-post-assets.sgp1.digitaloceanspaces.com/2022/06/CAMPUS-2-JUNE-24.png');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
 }
 .abody1{
-    background-color: gray;
+    /* background-color: gray; */
     flex: 2;
     display: flex;
     flex-direction: column;
 }
 .acc-pic{
-    background-color: lightgoldenrodyellow;
+    /* background-color: lightgoldenrodyellow; */
     flex: 3;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .afaculty{
-    background-color: pink;
+    /* background-color: pink; */
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.account-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #80808099;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
 .abody2{
-    background-color: green;
+    /* background-color: green; */
     flex: 4;
     display: flex;
     flex-direction: column;
 }
 .aemail{
-    background-color: magenta;
+    /* background-color: magenta; */
     flex: 1;
     display: flex;
     flex-direction: column;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
 }
 .aemail1{
-    background-color: red;
+    /* background-color: red; */
     flex: 1;
     display: flex;
     justify-content: flex-start;
@@ -166,38 +181,48 @@ body{
 .aemail1 h3, .aphone1 h3, .aemail2 p, .aphone2 p{
     margin-left: 20px;
 }
+.aemail2, .aphone2{
+    color: #6a78bb;
+    font-weight: bold;
+}
 .aemail2 p, .aphone2 p{
     font-size: 20px;
 }
 .aemail2{
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     flex: 1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
+.profile .back-btn{
+    height: 30px;
+    width: 30px;
+    margin-left: -10px;
+}
 .aphone{
-    background-color: yellow;
+    /* background-color: yellow; */
     flex: 1;
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid;
 }
 .aphone1{
-    background-color: red;
+    /* background-color: red; */
     flex: 1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 .aphone2{
-    background-color: green;
+    /* background-color: green; */
     flex: 1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 .aempty{
-    background-color: black;
+    /* background-color: black; */
     flex: 3;
 }
 .back-btn{
@@ -215,9 +240,9 @@ body{
 
 @media only screen and (min-width: 768px) {
     .instruc-pic{
-        height: 200px;
-        width: 200px;
-        border-radius: 100px; 
+        height: 180px;
+        width: 180px;
+        border-radius: 90px; 
     }
     .afaculty h2{
         font-size: 30px;
@@ -228,11 +253,19 @@ body{
     .aemail1 h3, .aphone1 h3{
         font-size: 22px;
     }
+    .account-container{
+        height: 90%;
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
     .abody1{
         flex: 3;
+    }
+    .account-container{
+        height: 90%;
+        width: 40%;
     }
 }
 
