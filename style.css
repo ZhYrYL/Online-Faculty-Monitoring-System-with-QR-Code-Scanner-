@@ -120,7 +120,7 @@ body{
 /*---------------------------------ACCOUNT.PHP-------------------------*/
 .abody{
     /* background-color: coral; */
-    flex: 11;
+    flex: 10;
     display: flex;
     flex-direction: column;
      background: url('https://the-post-assets.sgp1.digitaloceanspaces.com/2022/06/CAMPUS-2-JUNE-24.png');

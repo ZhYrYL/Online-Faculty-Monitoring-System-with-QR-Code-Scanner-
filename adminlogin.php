@@ -31,7 +31,7 @@
                             <img src="img/user.png" alt="Username Icon">
                         </div>
                         <div class="user-input">
-                            <input type="text" name="username" placeholder="Username" id="username">
+                            <input type="text" name="username" placeholder="Username" id="username" required>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                             <img src="img/black-eye.png" alt="Username Icon" id="toggle-password">
                         </div>
                         <div class="pass-input">
-                            <input type="password" name="username" placeholder="Password" id="password"> 
+                            <input type="password" name="username" placeholder="Password" id="password" required> 
                         </div>
                     </div>
                 </div>
