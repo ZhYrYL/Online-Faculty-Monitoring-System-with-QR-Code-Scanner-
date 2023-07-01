@@ -16,6 +16,8 @@
                 <li><a href="adminanalytics.php" >Analytics</a></li>
                 <li><a href="adminschedule.php">Schedule</a></li>
                 <li><a href="adminaddpersonal.php">Add Instructor</a></li>
+                <li><a href="adminnotification.php">Notification</a></li>
+                <li><a href="adminaccount.php">Account</a></li>
             </ul>
             <div class="dropdown-menu">
                 <ul class="links">
@@ -23,6 +25,8 @@
                     <li><a href="adminanalytics.php">Analytics</a></li>
                     <li><a href="adminschedule.php">Schedule</a></li>
                     <li><a href="adminaddpersonal.php">Add Instructor</a></li>
+                    <li><a href="adminnotification.php">Notification</a></li>
+                    <li><a href="adminaccount.php">Account</a></li>
                 </ul>
             </div>
         </div>
