@@ -1013,7 +1013,7 @@ body{
     align-items: center;
     padding-right: 25px;
 }
-.add-instruc-footer a{
+.add-instruc-footer input{
     height: 80%;
     width: 20%;
     border-radius: 3px;
@@ -1028,7 +1028,7 @@ body{
     align-items: center;
     padding-bottom: 2px;
 }
-.add-instruc-footer a:hover{
+.add-instruc-footer input:hover{
     transition: 0.3s;
     background-color: #38E54D;
 }
@@ -1158,7 +1158,7 @@ body{
     justify-content: flex-end;
     align-items: center;
 }
-.add-next a{
+.add-next input{
     height: 60%;
     width: 80%;
     border-radius: 3px;
@@ -1190,7 +1190,7 @@ body{
     cursor: pointer;
 }
 
-.add-next a:hover{
+.add-next input:hover{
     transition: 0.3s;
     background-color: #38E54D;
 }

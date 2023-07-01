@@ -31,7 +31,7 @@
         </div>
     </div>
     <div class="adhomebody">
-        <div class="admin-add-personal">
+        <form class="admin-add-personal" action="adminaddsched.php">
             <div class="add-instruc-head">
                 <h3>Personal Information</h3>
             </div>
@@ -41,7 +41,7 @@
                         <label for="fname">First Name</label>
                     </div>
                     <div class="addinfo">
-                        <input type="text" name="fname" id="fname">
+                        <input type="text" name="fname" id="fname" required>
                     </div>
                 </div>
                 <div class="addpersonal">
@@ -49,7 +49,7 @@
                         <label for="lname">Last Name</label>
                     </div>
                     <div class="addinfo">
-                        <input type="text" name="lname" id="lname">
+                        <input type="text" name="lname" id="lname" required>
                     </div>
                 </div>
                 <div class="addpersonal">
@@ -57,7 +57,7 @@
                         <label for="email">Email</label>
                     </div>
                     <div class="addinfo">
-                        <input type="text" name="email" id="email">
+                        <input type="text" name="email" id="email" required>
                     </div>
                 </div>
                 <div class="addpersonal">
@@ -65,14 +65,14 @@
                         <label for="cnum">Contact Number</label>
                     </div>
                     <div class="addinfo">
-                        <input type="text" name="cnum" id="cnum">
+                        <input type="text" name="cnum" id="cnum" required>
                     </div>
                 </div>
             </div>
             <div class="add-instruc-footer">
-                <a href="adminaddsched.php">Next</a>
+                <input type="submit" value="Next" name="next">
             </div>
-        </div>
+        </form>
     </div>
     <div class="adhomefooter">
         <div class="footer-1">

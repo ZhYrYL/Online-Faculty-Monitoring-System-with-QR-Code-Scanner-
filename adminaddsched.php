@@ -31,7 +31,7 @@
         </div>
     </div>
     <div class="adhomebody">
-        <div class="add-schedule">
+        <form class="add-schedule" action="admingencode.php">
             <div class="add-sched-header">
                 <h3>Add Schedule</h3>
             </div>
@@ -42,7 +42,8 @@
                         <label>Year Level:</label>
                     </div>
                     <div class="sched-input">
-                        <select>
+                        <select required>
+                            <option value="" disabled selected>year</option>
                             <option>1st Year</option>
                             <option>2nd Year</option>
                             <option>3rd Year</option>
@@ -55,7 +56,8 @@
                         <label>Course Code:</label>
                     </div>
                     <div class="sched-input">
-                        <select>
+                        <select required>
+                            <option value="" disabled selected>code</option>
                             <option>IAS 101</option>
                             <option>IPT 101</option>
                             <option>TECH 101</option>
@@ -70,7 +72,8 @@
                         <label>Descriptive Title:</label>
                     </div>
                     <div class="sched-input">
-                        <select>
+                        <select required>
+                            <option value="" disabled selected>subject</option>
                             <option>Information Assurance and Security 1</option>
                             <option>Integrative Programming and Technologies</option>
                             <option>Technopreneurship</option>
@@ -85,7 +88,8 @@
                         <label>Lab:</label>
                     </div>
                     <div class="sched-input">
-                        <select>
+                        <select required>
+                            <option value="" disabled selected>laboratory</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -98,7 +102,8 @@
                         <label>Time:</label>
                     </div>
                     <div class="sched-input">
-                        <select>
+                        <select required>
+                            <option value="" disabled selected>time</option>
                             <option>8-10 Face to Face</option>
                             <option>8-10 Online</option>
                             <option>10-12 Face to Face</option>
@@ -115,7 +120,8 @@
                         <label>Days:</label>
                     </div>
                     <div class="sched-input">
-                        <select>
+                        <select required>
+                            <option value="" disabled selected>day</option>
                             <option>Monday</option>
                             <option>Tuesday</option>
                             <option>Wednesday</option>
@@ -129,7 +135,8 @@
                         <label>Room:</label>
                     </div>
                     <div class="sched-input">
-                        <select>
+                        <select required>
+                            <option value="" disabled selected>room</option>
                             <option>CLR1</option>
                             <option>CLR2</option>
                             <option>CLR3</option>
@@ -145,10 +152,10 @@
                     <button>Add more Subject</button>
                 </div>
                 <div class="add-next">
-                    <a href="admingencode.php">Generate QR Code</a>
+                    <input type="submit" value="Generate QR ssde" name="gencode">
                 </div>
             </div>
-        </div>
+        </form>
     </div>
     <div class="adhomefooter">
         <div class="footer-1">
