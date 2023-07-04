@@ -14,19 +14,19 @@
             <ul class="links">
                 <li><a href="adminhomepage.php" >Attendance</a></li>
                 <li><a href="adminanalytics.php" >Analytics</a></li>
-                <li><a href="adminschedule.php">Schedule</a></li>
+                <li><a href="adminschedule.php" >Schedule</a></li>
                 <li><a href="adminaddpersonal.php" style="color: gold">Add Instructor</a></li>
                 <li><a href="adminnotification.php">Notification</a></li>
-                <li><a href="adminaccount.php">Account</a></li>
+                <li><button class="show-modal1">Logout</button></li>
             </ul>
             <div class="dropdown-menu">
                 <ul class="links">
                     <li><a href="adminhomepage.php" >Attendance</a></li>
-                    <li><a href="adminanalytics.php">Analytics</a></li>
-                    <li><a href="adminschedule.php">Schedule</a></li>
+                    <li><a href="adminanalytics.php" >Analytics</a></li>
+                    <li><a href="adminschedule.php" >Schedule</a></li>
                     <li><a href="adminaddpersonal.php" style="color: gold">Add Instructor</a></li>
                     <li><a href="adminnotification.php">Notification</a></li>
-                    <li><a href="adminaccount.php">Account</a></li>
+                    <li><button class="show-modal">Logout</button></li>
                 </ul>
             </div>
         </div>
@@ -34,6 +34,24 @@
             <h2>Add Instructor</h2>
         </div>
     </div>
+
+    <section>
+        <span class="overlay"></span>
+        <div class="modal-box">
+            <div class="modal-header">
+                <h2>Logout</h2>
+            </div>
+            <div class="modal-body">
+                <p>Logging out will end your session</p>
+            </div>
+            <div class="modal-footer">
+                <button class="close-btn">Cancel</button>
+                <a href="adminlogin.php">Logout</a>
+            </div>
+        </div>
+    </section>
+
+    
     <div class="adhomebody">
         <form class="add-schedule" action="admingencode.php">
             <div class="add-sched-header">
@@ -156,7 +174,7 @@
                     <button>Add more Subject</button>
                 </div>
                 <div class="add-next">
-                    <input type="submit" value="Generate QR ssde" name="gencode">
+                    <input type="submit" value="Generate QR Code" name="gencode">
                 </div>
             </div>
         </form>
@@ -172,15 +190,46 @@
     </div>
 
     <script>
-        const toggleBtn = document.querySelector('.psu-logo')
+
+        //Navbar
+        // const toggleBtn = document.querySelector('.psu-logo')
         const dropDown = document.querySelector('.dropdown-menu')
 
-        toggleBtn.onclick = function () {
+        function psulogo() {
             dropDown.classList.toggle('open');
         }
-        // const psulogo = () => {
-        //     image.classList.toggle("open");
-        // };
+       
+
+
+
+        //Logout
+        const section = document.querySelector("section")
+        const overlay = document.querySelector(".overlay")
+        const showBtn = document.querySelector(".show-modal")
+        const showBtn1 = document.querySelector(".show-modal1")
+        const closeBtn = document.querySelector(".close-btn")
+
+
+        showBtn.addEventListener("click", () => {
+            section.classList.add("active")
+            dropDown.classList.remove('open')
+        });
+        
+        showBtn1.addEventListener("click", () => 
+            section.classList.add("active")
+        );
+
+        overlay.addEventListener("click", () => 
+            section.classList.remove("active")
+        );
+
+        closeBtn.addEventListener("click", () => 
+            section.classList.remove("active")
+            
+        );
+        
+       
+       
     </script>
 </body>
 </html>

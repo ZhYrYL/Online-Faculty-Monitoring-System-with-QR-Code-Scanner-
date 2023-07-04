@@ -508,6 +508,7 @@ body{
     height: 50px;
     border-radius: 25px;
     cursor: pointer;
+    z-index: 3;
 }
 .adlogo img:hover{
     transition: 0.3s;
@@ -597,6 +598,7 @@ body{
     text-decoration: none;
     color: white;
     margin-right: 20px;
+    z-index: 3;
 }
 .footer-2 a:hover{
     transition: 0.5s;
@@ -611,6 +613,7 @@ body{
     display: flex;
     gap: 20px;
     display: none;
+    z-index: 3;
 }
 .adlogo .links li{
     list-style: none;
@@ -624,7 +627,17 @@ body{
 .adlogo .links li a:hover{
     color: gold;
 }
-
+.show-modal, .show-modal1{
+    border: none;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    cursor:pointer;
+    font-family: 'Lato', sans-serif;
+}
+.show-modal:hover, .show-modal1:hover{
+    color: gold;
+}
 .dropdown-menu{
     background-color: #00000099;
     position: absolute;
@@ -638,6 +651,12 @@ body{
 }
 .open{
     display: block;
+    z-index: 2;
+    transition: 1s;
+}
+.open-again{
+    display: block;
+    z-index: 2;
     transition: 1s;
 }
 .dropdown-menu .links{
@@ -657,6 +676,119 @@ body{
     justify-content: center;
     align-items: center;
 }
+.close{
+    display: none;
+}
+section{
+    position: absolute;
+    /* top: 50px; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+.active .show-modal{
+    display: none;
+}
+.active .overlay{
+    opacity: 1;
+    pointer-events: auto;
+    /* background-color: blue; */
+}
+.active .modal-box{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    /* z-index: 2; */
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 25%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.modal-header{
+    /* background-color: green; */
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    margin-top: 10px;
+}
+.modal-body{
+    /* background-color: coral; */
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.modal-footer{
+    /* background-color: cyan; */
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+}
+
+.modal-footer a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #3bbff4;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 45%;
+    cursor: pointer;
+}
+.modal-footer button{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #808080;
+    width: 80%;
+    height: 45%;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.modal-footer a:hover{
+    background-color: #23ade4;
+    transition: 0.3s;
+}
+.modal-footer button:hover{
+    background-color: #b8b3b3;
+    transition: 0.3s;
+}
+
 
 @media only screen and (min-width: 768px) {
     .adlogo img{
@@ -671,6 +803,10 @@ body{
     }
     .dropdown-menu{
         top: 85px;
+    }
+    .modal-box{
+        width: 40%;
+        height: 20%;
     }
 }
 
@@ -704,6 +840,24 @@ body{
     .adsched{
         width: 50%;
     }
+    .modal-box{
+        width: 25%;
+        height: 25%;
+    }
+    /* .modal-footer{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px;
+    }
+    .modal-footer a{
+        width: 45%;
+        height: 45%;
+    }
+    .modal-footer button{
+        width: 45%;
+        height: 45%;
+    }
+     */
 }
 
 
