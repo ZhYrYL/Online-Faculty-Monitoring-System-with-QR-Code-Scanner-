@@ -534,6 +534,7 @@ body{
     background: url('https://the-post-assets.sgp1.digitaloceanspaces.com/2022/06/CAMPUS-2-JUNE-24.png');
     background-size: cover;
     background-position: center;
+    /* z-index: 2; */
 }
 .adsched{
     width: 90%;
@@ -688,6 +689,7 @@ section{
     justify-content: center;
     align-items: center;
     /* background-color: red; */
+    z-index: -1;
 }
 .active .show-modal{
     display: none;
@@ -710,6 +712,7 @@ section{
     background: rgba(0,0,0,0.3);
     opacity: 0;
     pointer-events: none;
+   
 }
 .modal-box{
     position: absolute;

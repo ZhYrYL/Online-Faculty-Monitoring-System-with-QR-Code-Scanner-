@@ -17,7 +17,7 @@
                 <li><a href="adminschedule.php" >Schedule</a></li>
                 <li><a href="adminaddpersonal.php" style="color: gold">Add Instructor</a></li>
                 <li><a href="adminnotification.php">Notification</a></li>
-                <li><button class="show-modal1">Logout</button></li>
+                <li><button class="show-modal1" onclick="logout()">Logout</button></li>
             </ul>
             <div class="dropdown-menu">
                 <ul class="links">
@@ -26,7 +26,7 @@
                     <li><a href="adminschedule.php" >Schedule</a></li>
                     <li><a href="adminaddpersonal.php" style="color: gold">Add Instructor</a></li>
                     <li><a href="adminnotification.php">Notification</a></li>
-                    <li><button class="show-modal">Logout</button></li>
+                    <li><button class="show-modal" onclick="logout()">Logout</button></li>
                 </ul>
             </div>
         </div>
@@ -206,7 +206,7 @@
         const section = document.querySelector("section")
         const overlay = document.querySelector(".overlay")
         const showBtn = document.querySelector(".show-modal")
-        const showBtn1 = document.querySelector(".show-modal1")
+        const logoutBtn = document.querySelector(".show-modal1")
         const closeBtn = document.querySelector(".close-btn")
 
 
@@ -215,7 +215,7 @@
             dropDown.classList.remove('open')
         });
         
-        showBtn1.addEventListener("click", () => 
+        logoutBtn.addEventListener("click", () => 
             section.classList.add("active")
         );
 
@@ -227,7 +227,18 @@
             section.classList.remove("active")
             
         );
+
         
+
+        function logout() {
+            section.style.zIndex = "1";
+            
+            setTimeout(function() {
+                section.style.zIndex = "-1";
+            }, 5000); 
+        }
+
+   
        
        
     </script>
