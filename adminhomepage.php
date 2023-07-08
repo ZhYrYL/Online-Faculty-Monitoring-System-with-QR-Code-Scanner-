@@ -11,6 +11,19 @@
     <div class="adhomeheader">
         <div class="adlogo">
             <img src="img/psu-logo.png" class="psu-logo" onclick="psulogo()">
+            <!-- <nav>
+                <div class="nav-notif">asdfasfsdfsf1</div>
+                <div class="adlogo"> 
+                    <ul class="links">
+                        <li><a href="adminhomepage.php" style="color: gold">Attendance</a></li>
+                        <li><a href="adminanalytics.php" >Analytics</a></li>
+                        <li><a href="adminschedule.php">Schedule</a></li>
+                        <li><a href="adminaddpersonal.php">Add Instructor</a></li>
+                        <li><a href="adminnotification.php">Notification</a></li>
+                        <li><button class="show-modal1" onclick="logout()">Logout</button></li>
+                    </ul>
+                </div>
+            <nav> -->
             <ul class="links">
                 <li><a href="adminhomepage.php" style="color: gold">Attendance</a></li>
                 <li><a href="adminanalytics.php" >Analytics</a></li>
@@ -19,6 +32,7 @@
                 <li><a href="adminnotification.php">Notification</a></li>
                 <li><button class="show-modal1" onclick="logout()">Logout</button></li>
             </ul>
+            
             <div class="dropdown-menu">
                 <ul class="links">
                     <li><a href="adminhomepage.php" style="color: gold">Attendance</a></li>
@@ -50,6 +64,10 @@
             </div>
         </div>
     </section>
+
+    <div class="notification">
+
+</div>
 
     <div class="adhomebody">
         <div class="adsched">

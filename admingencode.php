@@ -52,6 +52,7 @@
     </section>
 
 
+
     <div class="adhomebody">
         <div class="generate-code">
             <div class="qr-code"></div>

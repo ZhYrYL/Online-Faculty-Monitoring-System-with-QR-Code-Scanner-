@@ -514,6 +514,13 @@ body{
     transition: 0.3s;
     filter: brightness(90%);
 }
+
+
+/* nav{
+    display: none;
+} */
+
+
 .adtab{
     /* background-color: #5361a4; */
     flex: 4;
@@ -622,7 +629,7 @@ body{
 
 .adlogo .links li a{
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-size: 1rem;
 }
 .adlogo .links li a:hover{
@@ -847,6 +854,22 @@ section{
         width: 25%;
         height: 25%;
     }
+    /* nav{
+        display: block;
+        display: flex;
+        background-color: yellow;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    .adlogo{
+       
+        background-color: pink;
+    }
+    .nav-notif{
+       
+        background-color: lightgreen;
+    } */
     /* .modal-footer{
         flex-direction: row;
         justify-content: space-around;

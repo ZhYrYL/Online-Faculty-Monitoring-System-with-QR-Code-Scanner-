@@ -54,7 +54,7 @@
 
 
     <div class="adhomebody">
-        <form class="admin-add-personal" action="adminaddsched.php">
+        <form class="admin-add-personal" action="db/connection.php">
             <div class="add-instruc-head">
                 <h3>Personal Information</h3>
             </div>
