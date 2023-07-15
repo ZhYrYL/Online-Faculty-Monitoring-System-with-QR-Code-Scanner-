@@ -14,14 +14,14 @@
             <ul class="links">
                 <li><a href="homepage.php" >Schedule</a></li>
                 <li><a href="account.php" style="color: gold">Account</a></li>
-                <li><a href="#">Blank</a></li>
+                <li><a href="attendancelog.php" >Attendance Log</a></li>
                 <li><a href="#">Blank</a></li>
             </ul>
             <div class="dropdown-menu">
                 <ul class="links">
                     <li><a href="homepage.php">Schedule</a></li>
                     <li><a href="account.php"  style="color: gold">Account</a></li>
-                    <li><a href="#">Blank</a></li>
+                    <li><a href="attendancelog.php" >Attendance Log</a></li>
                     <li><a href="#">Blank</a></li>
                 </ul>
             </div>
