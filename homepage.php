@@ -15,14 +15,14 @@
                 <li><a href="homepage.php" style="color: gold">Schedule</a></li>
                 <li><a href="account.php" >Account</a></li>
                 <li><a href="attendancelog.php" >Attendance Log</a></li>
-                <li><a href="#">Blank</a></li>
+                <li><button class="show-modal1" onclick="logout()">Logout</button></li>
             </ul>
             <div class="dropdown-menu">
                 <ul class="links">
                     <li><a href="homepage.php" style="color: gold">Schedule</a></li>
                     <li><a href="account.php">Account</a></li>
                     <li><a href="attendancelog.php" >Attendance Log</a></li>
-                    <li><a href="#">Blank</a></li>
+                    <li><button class="show-modal" onclick="logout()">Logout</button></li>
                 </ul>
             </div>
         </div>
@@ -33,6 +33,24 @@
             <h2>Schedule</h2>
         </div>
     </div>
+
+    <section>
+        <span class="overlay"></span>
+        <div class="modal-box">
+            <div class="modal-header">
+                <h2>Logout</h2>
+            </div>
+            <div class="modal-body">
+                <p>Logging out will end your session</p>
+            </div>
+            <div class="modal-footer">
+                <button class="close-btn">Cancel</button>
+                <a href="scanner.php">Logout</a>
+            </div>
+        </div>
+    </section>
+
+
     <div class="hbody">
         <div class="oversched">
             <div class="oversched-head">
@@ -54,15 +72,57 @@
     </div>
 
     <script>
-        const toggleBtn = document.querySelector('.psu-logo')
+
+        //Navbar
+        // const toggleBtn = document.querySelector('.psu-logo')
         const dropDown = document.querySelector('.dropdown-menu')
 
-        toggleBtn.onclick = function () {
+        function psulogo() {
             dropDown.classList.toggle('open');
         }
-        // const psulogo = () => {
-        //     image.classList.toggle("open");
-        // };
+       
+
+
+
+        //Logout
+        const section = document.querySelector("section")
+        const overlay = document.querySelector(".overlay")
+        const showBtn = document.querySelector(".show-modal")
+        const logoutBtn = document.querySelector(".show-modal1")
+        const closeBtn = document.querySelector(".close-btn")
+
+
+        showBtn.addEventListener("click", () => {
+            section.classList.add("active")
+            dropDown.classList.remove('open')
+        });
+        
+        logoutBtn.addEventListener("click", () => 
+            section.classList.add("active")
+        );
+
+        overlay.addEventListener("click", () => 
+            section.classList.remove("active")
+        );
+
+        closeBtn.addEventListener("click", () => 
+            section.classList.remove("active")
+            
+        );
+
+        
+
+        function logout() {
+            section.style.zIndex = "1";
+            
+            setTimeout(function() {
+                section.style.zIndex = "-1";
+            }, 5000); 
+        }
+
+   
+       
+       
     </script>
 </body>
 </html>

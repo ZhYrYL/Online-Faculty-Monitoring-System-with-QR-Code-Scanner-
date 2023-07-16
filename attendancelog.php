@@ -15,14 +15,14 @@
                     <li><a href="homepage.php" >Schedule</a></li>
                     <li><a href="account.php" >Account</a></li>
                     <li><a href="attendancelog.php" style="color: gold">Attendance Log</a></li>
-                    <li><a href="#">Blank</a></li>
+                    <li><button class="show-modal1" onclick="logout()">Logout</button></li>
                 </ul>
                 <div class="dropdown-menu">
                     <ul class="links">
                         <li><a href="homepage.php" >Schedule</a></li>
                         <li><a href="account.php">Account</a></li>
                         <li><a href="attendancelog.php" style="color: gold">Attendance Log</a></li>
-                        <li><a href="#">Blank</a></li>
+                        <li><button class="show-modal" onclick="logout()">Logout</button></li>
                     </ul>
                 </div>
         </div>
@@ -42,7 +42,7 @@
             </div>
             <div class="modal-footer">
                 <button class="close-btn">Cancel</button>
-                <a href="adminlogin.php">Logout</a>
+                <a href="scanner.php">Logout</a>
             </div>
         </div>
     </section>
